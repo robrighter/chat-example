@@ -1,4 +1,4 @@
-var relay = new RelayClient("175520A5-AEFA-4FC9-B2AD-DBA4069984A5");
+var relay = new RelayClient("24757EAC-49D7-4200-B691-8FA7265D8EC7");
 var colorList = ['#FFDC48', '#F67F7F', '#FD6BA6', '#67D384', '#B0C9E8'];
 
 var setNameColor = function(color){
@@ -29,7 +29,7 @@ var formatMessageHtml = function(messagejson){
 };
 
 var insertMessage = function(messagejson){
-  relay.insert("506BFFD6-AAC0-4616-9EB3-6A43CBD8C042", messagejson);
+  relay.insert("8A45C981-F019-46BF-9242-D404D2967894", messagejson);
   $('#comment').val('');
 };
 
