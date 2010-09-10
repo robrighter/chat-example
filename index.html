@@ -41,10 +41,12 @@ $(document).ready(function() {
         insertMessage(packageJsonMessage());
    });
    
-   $('#talkform').submit(function(){
-	      alert('NOAH');
-        insertMessage(packageJsonMessage());
-        return false;
+   $('#comment').keyup(function(e){
+	      alert("Key Code: "+e.keyCode)
+	      if(e.keyCode == 13){
+		    	insertMessage(packageJsonMessage());
+	        return false;
+				}
    });
    
    $('#changecolor').bind('click', function(){
