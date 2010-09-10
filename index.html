@@ -14,7 +14,7 @@
         Chatts go here.
       </div>
       <div id='talkbox'>
-        <form id='talkform'>
+        <form id='talkform' action='#' >
           <input id='name' type='text' value='Your Name' />
           <input id='comment' name='comment' type='text' />
           <div id='sendbutt'>SEND</div>
@@ -42,6 +42,7 @@ $(document).ready(function() {
    });
    
    $('#talkform').submit(function(){
+	      alert('NOAH');
         insertMessage(packageJsonMessage());
         return false;
    });
